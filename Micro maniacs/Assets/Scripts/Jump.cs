@@ -17,7 +17,7 @@ public class Jump : MonoBehaviour {
 
     private void Boost(Rigidbody player)
     {
-        player.AddForce(transform.forward * (strength - player.velocity.magnitude )* Time.deltaTime * 50);
+        player.AddForce(transform.forward * (strength - player.velocity.magnitude )* Time.deltaTime * 40);
         boostFX.Play();
     }
 }

@@ -13,7 +13,6 @@ public class Menu : MonoBehaviour {
 
     [Header("Buttons")]
     public GameObject playButton;
-    public GameObject backButton;
     public Toggle controllerButton;
 
     public GameObject mainUI;
@@ -71,7 +70,7 @@ public class Menu : MonoBehaviour {
         }
         if(settings)
         {
-            eventSystem.SetSelectedGameObject(backButton);
+            eventSystem.SetSelectedGameObject(controllerButton.gameObject);
         }
     }
 
