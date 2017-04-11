@@ -28,3 +28,7 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+Micro maniacs/Library/ShaderCache/
+Micro maniacs/Library/metadata/
+Micro maniacs/Assets/Scenes/Menu/
+Micro maniacs/Assets/Scenes/Testlvl1/
