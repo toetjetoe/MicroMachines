@@ -282,7 +282,7 @@ public class GameMaster : MonoBehaviour {
         gameOver = true;
         winText1.text = "";
         winText2.text = "";
-        finishText.text = "Player " + winningPlayer + "has won!!!";
+        finishText.text = "Player " + winningPlayer + " has won!!!";
 
         _audio.clip = finish;
         _audio.Play();
