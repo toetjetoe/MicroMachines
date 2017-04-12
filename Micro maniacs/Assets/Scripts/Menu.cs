@@ -9,7 +9,7 @@ public class Menu : MonoBehaviour {
 
     private Animator anim;
     private bool controller;
-
+    private int levelToBeLoaded;
 
     [Header("Buttons")]
     public GameObject playButton;
@@ -54,7 +54,7 @@ public class Menu : MonoBehaviour {
 
             if(loadingProgress >= 10)
             {
-                SceneManager.LoadSceneAsync(1);
+                SceneManager.LoadSceneAsync(levelToBeLoaded);
                 loading = false;
             }
         }
@@ -75,11 +75,11 @@ public class Menu : MonoBehaviour {
     }
 
 
-    public void Play()
+    public void Play(int level)
     {
         SaveSettings();
         loading = true;
-
+        levelToBeLoaded = level;
         loadingScreen.SetActive(true);
         if (controller)
         {
